@@ -14,12 +14,12 @@ header {
 }
 .logo {
     margin-top: 45px;
-    margin-left: 100px;
+    margin-left: 7%;
 }
 .navbar {
     display: flex;
     margin-top: 45px;
-    margin-right: 85px;
+    margin-right: 7%;
 }
 .navbar li,a {
     list-style: none;
@@ -35,6 +35,12 @@ header {
 .navbar li:hover {
     border: 1px solid #ffffff;
     border-radius: 15px;
+}
+.dropdown {
+    display: none;
+}
+.dropdown-content {
+    display: none;
 }
 #icon-menu {
     display: none;
@@ -65,6 +71,7 @@ header {
 
 .about {
     display: flex;
+    justify-content: space-between;
 }
 .about-left {
     margin-left: 18%;
@@ -97,9 +104,8 @@ header {
     padding: 10px 30px;
 }
 .about-right {
-    margin-right: 170px;
+    margin-right: 12%;
     margin-top: 10px;
-    margin-left: 75px;
 }
 
 
@@ -206,20 +212,19 @@ header {
     height: 113px;
     background-size: cover;
 }
-.bottom-block {
-    position: relative;
+.bottom-block-content {
     display: flex;
     justify-content: space-between;
     padding-left: 12%;
     padding-right: 12%;
     color: #ffffff;
 }
-.bottom-block p {
+.bottom-block-content p {
     padding-top: 48px;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
-.bottom-block button {
+.bottom-block-content button {
     background: none;
     border: 1px solid #ffffff;
     border-radius: 30px;
@@ -243,19 +248,17 @@ header {
 .services {
     background-color: #f3f3f3;
 }
-.services-left {
-    display: flex;
-    width: 40%;
-}
 .services-content {
-    display: flex;
     padding-left: 12%;
     padding-right: 12%;
     padding-bottom: 135px;
     display: flex;
     justify-content: space-between;
 }
-
+.services-left {
+    display: flex;
+    width: 40%;
+}
 .services-text {
     margin-left: 6%;
     font-weight: 400;
@@ -353,7 +356,7 @@ header {
     text-transform: uppercase;
 }
 .impressed-right {
-    margin-right: 100px;
+    margin-right: 7%;
 }
 .impressed-right img {
     position: relative;
@@ -564,8 +567,8 @@ header {
     padding-bottom: 100px;
 }
 .testimonials-content {
-    margin-left: 95px;
-    margin-right: 95px;
+    margin-left: 7%;
+    margin-right: 7%;
     background-color: #ffffff;
     color: #9c9d9d;
     font-weight: 400;
@@ -633,7 +636,7 @@ header {
 }
 .news-content-header {
     padding-top: 80px;
-    padding-left: 100px;
+    padding-left: 7%;
 }
 .news-content-header h3 {
     text-transform: uppercase;
@@ -652,14 +655,14 @@ header {
 }
 .news-content-comment h3 {
     padding-top: 105px;
-    padding-left: 170px;
+    padding-left: 12%;
     color: #e1e4e9;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 .news-content-comment h4 {
-    padding-left: 170px;
+    padding-left: 12%;
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -672,7 +675,7 @@ header {
 }
 .news-content-comment h5 {
     padding-top: 20px;
-    padding-left: 170px;
+    padding-left: 12%;
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #464646;
@@ -680,14 +683,14 @@ header {
 }
 .news-content-comment p {
     padding-top: 60px;
-    padding-left: 170px;
+    padding-left: 12%;
     color: #696d74;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
 .news-content-comment button {
-    padding-left: 170px;
+    padding-left: 12%;
     padding-top: 55px;
     padding-bottom: 90px;
     border:  none;
@@ -765,7 +768,6 @@ header {
     padding: 15px;
 }
 .price-content-right-block {
-    /* margin-left: 7%; */
     background-color: #ffffff;
     text-align: center;
 }
@@ -953,7 +955,29 @@ footer {
 .footer-bottom {
     padding-bottom: 90px;
 }
+
+
+
+
 @media screen and (max-width: 576px) {
+    .header-content h3 {
+        font-size: 25px;
+    }
+    .header-content p {
+        font-size: 12px;
+    }
+    .about-left h3{
+        font-size: 18px;
+    }
+    .about-left p {
+        font-size: 12px;
+    }
+    .header-block h3 {
+        font-size: 18px;
+    }
+    .header-block p {
+        font-size: 12px;
+    }
     .portfolio-menu {
         display: flex;
         flex-direction: column;
@@ -1022,6 +1046,43 @@ footer {
         margin-left: 15%;
         margin-right: 15%;
     }
+    .testimonials-content {
+        font-size: 12px;
+    }
+    .slide-testimonials-name h3 {
+        font-size: 12px;
+    }
+    .slide-testimonials-name h4 {
+        color: #464646;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 10px;
+    }
+    .news-content-header h3 {
+        font-size: 18px;
+    }
+    .news-content-header p {
+        font-size: 12px;
+    }
+    .news-content-comment h3 {
+        font-size: 18px;
+    }
+    .news-content-comment h4 {
+        font-size: 12px;
+    }
+    .news-content-comment h5 {
+        font-size: 12px;
+    }
+    .news-content-comment p {
+        font-size: 12px;
+        padding-right: 5%;
+    }
+    .news-content-comment button {
+        font-size: 12px;
+    }
+    .price-content-center-block-top p {
+        font-size: 10px;
+    }
     .subscribe-form input {
         width: 100%;
     }
@@ -1038,19 +1099,55 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .about-right {
+        max-width: 100%;
+    }
+    .about-right img {
+        width: 100%;
+    }
     .navbar a {
         display: none;
     }
     #icon-menu {
+        color: #ffffff;
         float: right;
         display: block;
-        margin-top: 45px;
+        margin-top: 40px;
         margin-right: 12%;
         font-size: 24px;
-        color: #ffffff;
     }
     #icon-menu li {
         list-style: none;
+    } 
+    .dropdown {
+        display: block;
+        margin-right: 12%;
+    }  
+    .dropdown-content {
+        display: none;
+    }
+    .dropdown-content a {
+        color: black;
+        font-size: 10px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        color: #ffffff;
+        position: absolute;
+        right: 12%;
+        top: 5px;
+    }
+    .dropdown:hover .dropdown-content li {
+        list-style: none;
+    }
+    .dropdown:hover .dropdown-content a {
+        padding: 5px 1px;
+        color: #ffffff;
+    }
+    .dropdown:hover #icon-menu {
+        display: none;
     }
     .details-bottom-heading h3{
         font-size: 16px;
@@ -1074,6 +1171,86 @@ footer {
         text-align: center;
         margin-right: 11%;
         margin-left: 11%;
+    }
+    .bottom-block-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .bottom-block p {
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    .bottom-block button {
+        font-size: 14px;
+        height: 30px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .services-content {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-bottom: 135px;
+        display: flex;
+        flex-direction: column;
+    }
+    .services-left {
+        display: flex;
+        flex-direction: column;
+    }
+    .services-text {
+        text-align: center;
+        margin-left: 0;
+    }
+    .services-text h3 {
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    .services-text-top p {
+        margin-bottom: 35px;
+        font-size: 14px;
+    }
+    .services-text-bottom p {
+        font-size: 12px;
+    }
+    .services-icons {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        gap: 10px
+    }
+    /* .services-right {
+        display: flex;
+    }
+    .skills {
+        position: relative;
+    } */
+    
+    .diagram p {
+        border: 5px solid #19bd9a;
+        border-radius: 100%;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        color: #81868e;
+        padding: 48px 48px;
+    }
+    .skills-center {
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+    .percent {
+        font-size: 14px;
+        color: #81868e;
+    }
+    .name-skill {
+        padding-top: 25px;
+        text-align: center;
+        font-size: 16px;
+        color: #81868e;
+        font-weight: 300;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .portfolio-bottom-block-content {
         text-align: center;
@@ -1257,6 +1434,8 @@ footer {
         padding-top: 20px;
         margin: 0;
         text-align: center;
+        margin-left: 7%;
+        margin-right: 7%;
     }
     .details-bottom-left {
         font-size: 10px;
@@ -1291,13 +1470,6 @@ footer {
         width: 100%;
         display: block;
     }
-    .bottom-block p {
-        font-size: 16px;
-    }
-    .bottom-block button {
-        font-size: 14px;
-        
-    }
     .services-left {
         width: auto;
     }
@@ -1310,6 +1482,13 @@ footer {
         padding-top: 5px;
         padding-bottom: 15px;
     }
+    .impressed-left {
+        text-align: center;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-bottom: 30px;
+    } 
     .impressed-right {
         display: none;
     }   
